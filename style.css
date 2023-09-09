@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 8px;
+}
+
+.company-logo img {
+    width: 140px;
+    background-color: transparent;
+}
+
+.nav-links ul {
+    gap: 16px;
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color: red;
+}
+
+.nav-item.active {
+    color: var(--accent-color);
+}
+
+.search-bar {
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #044174;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #84bce9;
+    background-color: #c9e7f7;
+    transform: translateY(-4px);
+    
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    background-color: #f3faff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+}
+
+.social-links {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin-inline: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+/* Style the social icons */
+.social-links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Hover effect for social icons */
+.social-links a:hover img {
+    filter: brightness(1.2);
+}
+
+
+
+
+/* Light Theme */
+body.light-mode {
+    /* Your existing light theme styles here */
+    background-color: #fff;
+    color: var(--primary-text-color);
+}
+
+/* Dark Theme */
+body.dark-mode {
+    /* Your dark theme styles here */
+    background-color: #050C2A;
+    color: #fff;
+}
+
+
+/* Style for the Night Mode Button */
+#night-mode-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Adjust the font size to set the icon size */
+    margin-right: 8px; /* Add space between the moon icon and the search bar */
+}
+
+#night-mode-toggle img {
+    width: 24px; /* Adjust the width as needed */
+    height: auto;
+    
+}
+
+/* Style for the Search Bar */
+.search-bar {
+    height: 32px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the Search Input */
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #1b1e22;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Card Styles for Dark Mode */
+body.dark-mode .card {
+    background-color: #1b3352; /* Dark Blue Card Background in Dark Mode */
+    color: white; /* White Text for Card in Dark Mode */
+}
+
+/* Card Header Image Styles for Dark Mode */
+body.dark-mode .card-header img {
+    filter: brightness(1); /* Adjust brightness for card images in Dark Mode */
+}
+
+/* Card Content Styles for Dark Mode */
+body.dark-mode .card-content h3,
+body.dark-mode .card-content .news-source,
+body.dark-mode .card-content .news-desc {
+    color: white; /* White Text for Card Content in Dark Mode */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles for Dark Mode */
+body.dark-mode footer {
+    background-color: #1b3352; /* Dark Purple Background */
+    color: white; /* White Text */
+}
+
+/* Navigation Bar Styles for Dark Mode */
+body.dark-mode nav {
+    background-color:#1b3352; /* Dark Purple Background */
+}
+
+/* Font Color for Links in Dark Mode */
+body.dark-mode .hover-link {
+    color: white; /* White Text for Navigation Links in Dark Mode */
+}
+
+/* Inside Box Styles for Dark Mode */
+body.dark-mode .footer-content {
+    background-color:#1b3352; /* Dark Blue Inside Box in Dark Mode */
+}
+
+/* Font Color for Inside Box Text in Dark Mode */
+body.dark-mode .footer-content p {
+    color: white; /* White Text for Inside Box in Dark Mode */
+}
+
+/* Font Color for Social Icons in Dark Mode */
+body.dark-mode .social-links img {
+    filter: brightness(1); /* White Social Icons in Dark Mode */
+}
