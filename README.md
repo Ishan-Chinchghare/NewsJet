@@ -1,4 +1,4 @@
-# News App
+# NewsJet
 
 ![Screenshot (307)](https://github.com/Ishan-Chinchghare/NewsJet/assets/112750192/bdff8ef7-e278-425f-9528-c83f546b3c6d)
 
