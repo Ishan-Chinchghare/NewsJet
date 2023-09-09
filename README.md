@@ -6,7 +6,7 @@
 
 ## Overview
 
-The News App is a web application that provides users with up-to-date news articles on various topics. It offers a user-friendly interface where users can explore news articles, filter by categories, search for specific topics, and read detailed articles from reputable sources.
+NewsJet is a web application that provides users with up-to-date news articles on various topics. It offers a user-friendly interface where users can explore news articles, filter by categories, search for specific topics, and read detailed articles from reputable sources.
 
 ## Key Features
 
@@ -30,15 +30,6 @@ The News App is a web application that provides users with up-to-date news artic
 
 - News API: The app retrieves news articles and related data from a third-party news API using API requests.
 
-## Getting Started
-
-1. Clone the repository: `git clone https://github.com/your-username/news-app.git`
-2. Open the project folder: `cd news-app`
-3. Open the `index.html` file in your web browser or use a local development server.
-
-## Demo
-
-You can try the live demo [here](https://your-username.github.io/news-app).
 
 ## Future Enhancements
 
